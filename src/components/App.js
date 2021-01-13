@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import styles from "./App.module.css";
+import Container from "./AppStyled";
 import FeedbackOptions from "./FeedbackOptions/FeedbackOptions";
 import Notification from "./Notification/Notification";
 import Section from "./Section/Section";
@@ -30,7 +30,7 @@ class App extends Component {
   render() {
     const { good, neutral, bad } = this.state;
     return (
-      <div className={styles.container}>
+      <Container>
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={Object.keys(this.state)}
@@ -50,7 +50,7 @@ class App extends Component {
             <Notification message="No feedback given" />
           )}
         </Section>
-      </div>
+      </Container>
     );
   }
 }

@@ -1,0 +1,10 @@
+{
+    "color-highlight.matchWords": true,
+    "color-highlight.languages": [
+
+        "*"
+    ],
+    "color-highlight.sass.includePaths": [
+    
+    ]
+}
